@@ -24,6 +24,12 @@ PRODUCT_COPY_FILES += \
 # Virtual A/B OTA
 $(call inherit-product, \
     $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+    
+# fastbootd
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock \
+	android.hardware.fastboot@1.0-impl-mock.recovery \
+    fastbootd    
 
 # A/B
 ENABLE_VIRTUAL_AB := true
