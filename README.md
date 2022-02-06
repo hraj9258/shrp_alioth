@@ -1,4 +1,4 @@
-# android_device_xiaomi_alioth-SHRP
+# android_device_xiaomi_alioth
 For building SHRP for Xiaomi Mi 11X / Redmi K40 / POCO F3
 
 SHRP device tree for Xiaomi Mi 11X / Redmi K40 / POCO F3
