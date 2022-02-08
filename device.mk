@@ -3,7 +3,7 @@
 #
 
 # Inherit from sm8250-common
-$(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
+$(call inherit-product, device/xiaomi/alioth/kona.mk)
 #$(call inherit-product, vendor/xiaomi/alioth/alioth-vendor.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 30
@@ -93,27 +93,27 @@ PRODUCT_COPY_FILES += \
 PRODUCT_EXTRA_RECOVERY_KEYS += \
    $(LOCAL_PATH)/security/miui   
 
-# SHRP specific device flags
-SHRP_DEVICE_CODE := alioth
-SHRP_PATH := device/xiaomi/alioth
-SHRP_MAINTAINER := Pranav_Talmale
-SHRP_REC_TYPE := SAR
-SHRP_DEVICE_TYPE := A/B
-SHRP_REC := /dev/block/bootdevice/by-name/boot
-SHRP_EDL_MODE := 1
-SHRP_INTERNAL := /sdcard
-SHRP_EXTERNAL := /external_sd
-SHRP_OTG := /usb_otg
-SHRP_FLASH := 1
-SHRP_AB := true
-SHRP_STATUSBAR_RIGHT_PADDING := 48
-SHRP_STATUSBAR_LEFT_PADDING := 48
-SHRP_NOTCH := true
-SHRP_EXPRESS := true
-SHRP_EXPRESS_USE_DATA := true
-SHRP_DARK := true
-SHRP_CUSTOM_FLASHLIGHT := false
-SHRP_FLASH_MAX_BRIGHTNESS := 300
-SHRP_NO_SAR_AUTOMOUNT := true
-SHRP_LITE := false
-SHRP_OFFICIAL := true
+# # SHRP specific device flags
+# SHRP_DEVICE_CODE := alioth
+# SHRP_PATH := device/xiaomi/alioth
+# SHRP_MAINTAINER := Pranav_Talmale
+# SHRP_REC_TYPE := SAR
+# SHRP_DEVICE_TYPE := A/B
+# SHRP_REC := /dev/block/bootdevice/by-name/boot
+# SHRP_EDL_MODE := 1
+# SHRP_INTERNAL := /sdcard
+# SHRP_EXTERNAL := /external_sd
+# SHRP_OTG := /usb_otg
+# SHRP_FLASH := 1
+# SHRP_AB := true
+# SHRP_STATUSBAR_RIGHT_PADDING := 48
+# SHRP_STATUSBAR_LEFT_PADDING := 48
+# SHRP_NOTCH := true
+# SHRP_EXPRESS := true
+# SHRP_EXPRESS_USE_DATA := true
+# SHRP_DARK := true
+# SHRP_CUSTOM_FLASHLIGHT := false
+# SHRP_FLASH_MAX_BRIGHTNESS := 300
+# SHRP_NO_SAR_AUTOMOUNT := true
+# SHRP_LITE := false
+# SHRP_OFFICIAL := true
